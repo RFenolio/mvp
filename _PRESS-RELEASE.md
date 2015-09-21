@@ -17,28 +17,28 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+  Tea Time
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+  Always brew a perfect cup of tea
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+  To make the perfect cup of tea, there are some things that you need to keep in mind. With Tea Time you can always find the right temperature for your water, and steep your tea for exactly the right amount of time.
 
 ## Problem ##
-  > Describe the problem your product solves.
+  Keeping track of all the different types of teas can be cumbersome, and trying a new tea can be exciting, but you always want your tea to taste the best. With tea time you can simply select your type of tea and you don't have to go search out the information which can be scattered in many different locations.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+  Tea Time quickly gives you just the information that you need to make the perfect cup of tea. You can find it quickly and without hassle. You can find the correct water temperature and brewing time for your tea.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+  "We want to provide people with the tools to make the best cup of tea possible. I  know you'll find Tea Time to be an integral part of your tea making routine. Hopefully it will also inspire you to try new teas and experience new and wonderful flavors."
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+  To get started, just click on your tea and pull up the information about that tea, you can then set the timer and be on your way to an amazing cup of tea.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+  "I love my loose teas, but i used to have to go out and resarch the best ways to make new teas that I would bring home. Now I just pull up tea time and I have exactly the information I need when I want to make my tea."
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+  Check out tea time now and enjoy the best cup of tea you've ever made.
