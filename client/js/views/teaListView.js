@@ -14,18 +14,16 @@ var TeaListView = Backbone.View.extend({
     this.entries = this.collection.models.map(function(model) {
       
       var tea = new Tea(model);
-      console.log("Tea in TeaListView: ", tea);
       return tea; 
     });
-    console.log("TeaListView collection:", this.collection);  
-    console.log("TeaListView this.entries: ", this.entries);
 
-    var $els = this.entries.map(function(entry) {
-      console.log('entry: ', entry);
-      return new TeaView({entry});
-    });
-    console.log("$els: ", $els);
-    this.$el.append($els);
+    var context = this;
+    this.entries.forEach(function (entry) {
+      var newTea = new TeaListItemView({model:entry.attributes});
+      context.$el.append(newTea.$el); 
+      console.log(newTea);
+    })
+    console.log(this.entries);
 
     return this;
   }

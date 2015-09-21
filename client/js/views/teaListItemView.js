@@ -2,7 +2,7 @@ var TeaListItemView = Backbone.View.extend({
 
   tag: 'li',
 
-  template: _.template('<p>Tea: <%= tea %> temperature: <%= temperature %> time: <%= time %></p>'),
+  template: _.template('<li>Tea: <%= tea %> temperature: <%= temperature %> time: <%= time %></li>'),
 
   initialize: function () {
     this.render();
@@ -16,6 +16,6 @@ var TeaListItemView = Backbone.View.extend({
     })
 
     this.$el.html(entry);
-    return this.$el;  
+    return this.$el;
   }
 });
