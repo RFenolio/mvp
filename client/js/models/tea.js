@@ -1,11 +1,9 @@
 var tea = Backbone.Model.extend({
   
-  initialize: function () {
-    console.log('This model was initialized');
-  }
+  initialize: function () {},
 
   defaults: {
-    tea: '',
+    name: '',
     temperature: 100,
     time: 0
   }
