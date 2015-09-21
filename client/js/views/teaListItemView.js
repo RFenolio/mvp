@@ -2,7 +2,11 @@ var TeaListItemView = Backbone.View.extend({
 
   tag: 'li',
 
-  template: _.template('<li>Tea: <%= tea %> temperature: <%= temperature %> time: <%= time %></li>'),
+  template: _.template('<li>Tea: <%= tea %> temperature: <%= temperature %> time: <%= time %> seconds</li>'),
+
+  events: {
+    'click': 'clickAction'
+  },
 
   initialize: function () {
     this.render();
@@ -17,5 +21,9 @@ var TeaListItemView = Backbone.View.extend({
 
     this.$el.html(entry);
     return this.$el;
+  },
+
+  clickAction: function () {
+    alert(this.model.get('time'));
   }
 });

@@ -12,6 +12,12 @@ var black = new Tea({
   time: 300
 })
 
+var oolong = new Tea({
+  name: 'oolong',
+  temperature: 212,
+  time: 250
+})
+
 var app = new AppView({
-  collection: new Teas([green, black], {model: Tea})
+  collection: new Teas([green, black, oolong], {model: Tea})
 });
