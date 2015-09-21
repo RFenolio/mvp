@@ -1,4 +1,4 @@
-var teaListItemView = Backbone.Extend.view({
+var TeaListItemView = Backbone.View.extend({
 
   tag: 'li',
 
@@ -16,5 +16,6 @@ var teaListItemView = Backbone.Extend.view({
     })
 
     this.$el.html(entry);
+    return this.$el;  
   }
 });

@@ -1,12 +1,12 @@
-var teaView = Backbone.View.extend({
+var TeaView = Backbone.View.extend({
 
-  el: div,
+  tagName: 'li',
 
-  initialize = function () {
+  initialize: function () {
     this.render();
   },
 
-  render = function () {
+  render: function () {
     
   }
 

@@ -1,5 +1,5 @@
-var teas = Backbone.Collection.extend({
+var Teas = Backbone.Collection.extend({
   
-  model: tea,
+  model: Tea
   
-})
+});

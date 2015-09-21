@@ -1,4 +1,4 @@
-var tea = Backbone.Model.extend({
+var Tea = Backbone.Model.extend({
   
   initialize: function () {},
 
@@ -7,4 +7,4 @@ var tea = Backbone.Model.extend({
     temperature: 100,
     time: 0
   }
-})
+});
