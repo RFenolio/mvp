@@ -12,28 +12,40 @@ var headers = defaultCorsHeaders;
 headers['Content-Type'] = "application/json";
 
 var getTeas = function (req, res) {
-
+  var teas = JSON.stringify(exampleTeas);
+  // res.send(teas);
+  res.writeHead(statusCode, headers);
+  res.end(teas);
 };
 
-
-var exampleTeas = [{
-  name: 'green',
-  temperature: 180,
-  time: 120
-},
-{
-  name: 'black',
-  temperature: 212,
-  time: 300
-},
-{
-  name: 'oolong',
-  temperature: 212,
-  time: 250
-},
-{
-  name: 'sencha',
-  temperature: 180,
-  time: 160
+var optionsHandler = function(request, response){
+  response.writeHead(statusCode, headers);
+  response.end();
 }
-]
+
+
+var exampleTeas = [
+  {
+    name: 'green',
+    temperature: 180,
+    time: 120
+  },
+  {
+    name: 'black',
+    temperature: 212,
+    time: 300
+  },
+  {
+    name: 'oolong',
+    temperature: 212,
+    time: 250
+  },
+  {
+    name: 'sencha',
+    temperature: 180,
+    time: 160
+  }
+];
+
+exports.getTeas = getTeas;
+exports.optionsHandler = optionsHandler;

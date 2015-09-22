@@ -18,6 +18,24 @@ var oolong = new Tea({
   time: 250
 })
 
+
+app = {
+  server: 'localhost:8000'
+};
+
+$.ajax({
+  url: app.server,
+  type: 'GET',
+  contentType: 'application/json',
+  success: function(data) {
+    console.log(data);
+  },
+  error: function(error) {
+    console.log(error);
+    console.error('TeaTime: Failed to fetch teas');
+  }
+});
+
 var app = new AppView({
   collection: new Teas([green, black, oolong], {model: Tea})
 });
