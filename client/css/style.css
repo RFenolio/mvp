@@ -1,5 +1,5 @@
 body {
-  background-color: lightgreen;
+  background-color: palegreen;
 }
 
 #container {
@@ -7,7 +7,7 @@ body {
   height: 100%;
   top: 0;
   bottom: 0;
-  background-image: url("../tealeaf.jpg");
+  background-image: url("../tealeaf.png");
   background-repeat: no-repeat;
   left: 0;
   right: 0;
