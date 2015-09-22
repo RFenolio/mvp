@@ -7,7 +7,7 @@ var app = express();
 app.use(cors());
 app.use(express.static(__dirname + '/../client'));
 
-app.listen(8000);
+app.listen(process.env.PORT || 8000);
 
 app.get('/teas', requestHandlers.getTeas);
 app.options('/teas', requestHandlers.optionsHandler);
