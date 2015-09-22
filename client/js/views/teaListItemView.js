@@ -30,7 +30,7 @@ var TeaListItemView = Backbone.View.extend({
     var timer = new CountDownTimer(this.model.get('time'));
     var finished = function () {
       if (this.expired()) {
-        alert("you're done!");
+        alert("Your tea is ready!");
       }
     };
 

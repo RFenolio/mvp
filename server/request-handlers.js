@@ -26,24 +26,39 @@ var optionsHandler = function(request, response){
 
 var exampleTeas = [
   {
-    name: 'green',
+    name: 'Example',
+    temperature: 190,
+    time: 120
+  },
+  {
+    name: 'Genmaicha',
     temperature: 180,
     time: 120
   },
   {
-    name: 'black',
-    temperature: 212,
-    time: 300
+    name: 'English Breakfast',
+    temperature: 200,
+    time: 225
   },
   {
-    name: 'oolong',
-    temperature: 212,
-    time: 250
+    name: 'Oolong',
+    temperature: 200,
+    time: 240
   },
   {
-    name: 'sencha',
+    name: 'Sencha',
     temperature: 180,
-    time: 160
+    time: 120
+  },
+  { 
+    name: 'Peppermint',
+    temperature: 200,
+    time: 420
+  },
+  {
+    name: 'Earl Grey',
+    temperature: 200,
+    time 240
   }
 ];
 
