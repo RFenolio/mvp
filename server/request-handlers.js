@@ -58,7 +58,7 @@ var exampleTeas = [
   {
     name: 'Earl Grey',
     temperature: 200,
-    time 240
+    time: 240
   }
 ];
 
