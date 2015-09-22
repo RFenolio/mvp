@@ -28,7 +28,7 @@ var exampleTeas = [
   {
     name: 'Example',
     temperature: 190,
-    time: 120
+    time: 10
   },
   {
     name: 'Genmaicha',
