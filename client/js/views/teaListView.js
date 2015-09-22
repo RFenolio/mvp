@@ -21,9 +21,7 @@ var TeaListView = Backbone.View.extend({
     this.entries.forEach(function (entry) {
       var newTea = new TeaListItemView({model:entry.attributes});
       context.$el.append(newTea.$el); 
-      console.log(newTea);
     })
-    console.log(this.entries);
 
     return this;
   }
