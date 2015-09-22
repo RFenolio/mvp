@@ -24,7 +24,8 @@ var TeaListItemView = Backbone.View.extend({
   },
 
   clickAction: function () {
-    $('body').append('<div id="timer">Your tea will be ready in <span id="time"></span> minutes!</div>');
+    $('#timer').remove();
+    $('#app').append('<div id="timer">Enjoy your tea in <span id="time"></span> minutes!</div>');
     var display = document.querySelector('#time');
     var timer = new CountDownTimer(this.model.get('time'));
 
