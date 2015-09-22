@@ -1,0 +1,55 @@
+body {
+  background-color: lightgreen;
+}
+
+#container {
+  width: 700px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  background-image: url("../tealeaf.jpg");
+  background-repeat: no-repeat;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+li {
+  font-size: 18pt;
+}
+
+#app {
+  width: 80%;
+  height: 90%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  margin-top: 75px;
+}
+
+h1 {
+  font-size: 36pt;
+  font-family: 'Helvetica', serif;
+  text-align: center;
+  padding-bottom: 36px;
+}
+
+input {
+  text-align: center;
+  line-height: 55px;
+  font-family: 'Helvetica', serif;
+  font-size: 32pt;
+}
+
+#list {
+  width: 80%;
+  height: auto;
+  position: relative;
+  margin: auto;
+  text-align: center;
+  top: 5%;
+}
+
+#timer {
+  font-size: 36px;
+}
