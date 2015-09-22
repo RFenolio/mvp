@@ -1,5 +1,11 @@
 
 // stub data
+var example = new Tea({
+  name: 'example',
+  temperature: 190,
+  time: 5
+});
+
 var green = new Tea({
   name: 'green',
   temperature: 180,
@@ -24,18 +30,19 @@ app = {
 };
 
 $.ajax({
-  url: app.server,
+  url: '/teas',
   type: 'GET',
   contentType: 'application/json',
   success: function(data) {
-    console.log(data);
+    var teaList = data.map(function (tea) {
+      return new Tea(tea);
+    });
+    var app = new AppView({
+      collection: new Teas(teaList, {model: Tea})
+    });
   },
   error: function(error) {
-    console.log(error);
+    console.log('error from AJAX call: ', error);
     console.error('TeaTime: Failed to fetch teas');
   }
-});
-
-var app = new AppView({
-  collection: new Teas([green, black, oolong], {model: Tea})
 });

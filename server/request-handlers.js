@@ -8,12 +8,12 @@ var defaultCorsHeaders = {
   "access-control-allow-headers": "content-type, accept",
   "access-control-max-age": 10 // Seconds.
 };
-var headers = defaultCorsHeaders;
+var headers = {};
 headers['Content-Type'] = "application/json";
 
 var getTeas = function (req, res) {
+  console.log("called getTeas");
   var teas = JSON.stringify(exampleTeas);
-  // res.send(teas);
   res.writeHead(statusCode, headers);
   res.end(teas);
 };

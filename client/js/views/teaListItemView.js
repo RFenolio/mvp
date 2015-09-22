@@ -28,16 +28,22 @@ var TeaListItemView = Backbone.View.extend({
     $('#app').prepend('<div id="timer">Enjoy your tea in <span id="time"></span> minutes!</div>');
     var display = document.querySelector('#time');
     var timer = new CountDownTimer(this.model.get('time'));
+    var finished = function () {
+      if (this.expired()) {
+        alert("you're done!");
+      }
+    };
 
-    timer.onTick(format(display)).start();
-
-    function format(display) {
+    var format = function (display) {
       return function (minutes, seconds) {
         minutes = minutes < 10 ? "0" + minutes : minutes;
         seconds = seconds < 10 ? "0" + seconds : seconds;
         display.textContent = minutes + ':' + seconds;
       };
     }
+
+    timer.onTick(format(display)).onTick(finished).start();
+
   }
 });
 
