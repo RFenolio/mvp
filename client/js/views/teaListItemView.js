@@ -2,7 +2,7 @@ var TeaListItemView = Backbone.View.extend({
 
   tag: 'li',
 
-  template: _.template('<li><p class="teaName"><%= tea %></p><p class="teaInfo">Temp: <%= temperature %> time: <%= time %> seconds</p></li>'),
+  template: _.template('<li><p class="teaName"><%= tea %></p><p class="teaInfo">Temp: <%= temperature %>, Time: <%= time %> seconds</p></li>'),
 
   events: {
     'click': 'clickAction'
