@@ -2,7 +2,7 @@ var TeaListItemView = Backbone.View.extend({
 
   tag: 'li',
 
-  template: _.template('<li>Tea: <%= tea %> temperature: <%= temperature %> time: <%= time %> seconds</li>'),
+  template: _.template('<li><p class="teaName"><%= tea %></p><p class="teaInfo">Temp: <%= temperature %> time: <%= time %> seconds</p></li>'),
 
   events: {
     'click': 'clickAction'
@@ -31,6 +31,7 @@ var TeaListItemView = Backbone.View.extend({
     var finished = function () {
       if (this.expired()) {
         alert("Your tea is ready!");
+        $('#timer').remove();
       }
     };
 
